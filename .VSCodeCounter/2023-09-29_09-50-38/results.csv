@@ -1,0 +1,22 @@
+"filename", "language", "SCSS", "TypeScript JSX", "TypeScript", "JSON with Comments", "JavaScript", "JSON", "SVG", "Markdown", "YAML", "comment", "blank", "total"
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/.eslintrc.json", "JSON with Comments", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/.prettierrc.js", "JavaScript", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 14, 37
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/components.json", "JSON", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 16
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/next.config.js", "JavaScript", 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 2, 5
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/package.json", "JSON", 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 1, 40
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 2552, 0, 391, 2943
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/postcss.config.js", "JavaScript", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/public/next.svg", "SVG", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/public/vercel.svg", "SVG", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/app/layout.tsx", "TypeScript JSX", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/app/page.tsx", "TypeScript JSX", 0, 79, 0, 0, 0, 0, 0, 0, 0, 0, 2, 81
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/components/page-header.tsx", "TypeScript JSX", 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 6, 54
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/components/ui/button.tsx", "TypeScript JSX", 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 6, 57
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/components/ui/separator.tsx", "TypeScript JSX", 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/globals.scss", "SCSS", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 107
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/src/lib/utils.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/tailwind.config.js", "JavaScript", 0, 0, 0, 0, 75, 0, 0, 0, 0, 1, 0, 76
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/tailwind.config.ts", "TypeScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/bpoehland/Desktop/Freelancing/brand/nextdevagency/tsconfig.json", "JSON with Comments", 0, 0, 0, 25, 0, 0, 0, 0, 0, 2, 1, 28
+"Total", "-", 80, 224, 24, 31, 89, 55, 2, 23, 2552, 4, 465, 3549
