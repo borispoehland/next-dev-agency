@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'Next Dev Agency',
   description:
     'Cleaning your code, detecting and fixing inefficiencies, schooling your workers remotely and upgrading to Next.js 13.',
+  openGraph: {
+    title: 'Next Dev Agency',
+    description:
+      'Cleaning your code, detecting and fixing inefficiencies, schooling your workers remotely and upgrading to Next.js 13.',
+  },
 }
 
 export default function RootLayout({
