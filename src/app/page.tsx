@@ -291,7 +291,7 @@ export default function Home() {
               {BookButton}
             </SinglePrice>
             <SinglePrice
-              heading="🤝 Custom requirements"
+              heading="🤝 Custom needs"
               description="We do whatever it needs in your Next.js codebase"
               benefits={[
                 'Professional and fast handling',
@@ -317,7 +317,7 @@ export default function Home() {
           Ready to take your Next.js codebase to the next level?
         </h2>
         <p className="text-muted-foreground text-lg !mb-3">
-          Book us, let us do our magic, and enjoy the results
+          Book us, let us do our magic, and enjoy excellent results
         </p>
         {GetStartedButton}
       </section>
