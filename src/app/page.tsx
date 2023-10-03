@@ -185,7 +185,10 @@ export default function Home() {
                 <Link
                   href="https://twitter.com/borispoehland"
                   target="_blank"
-                  className={cn(buttonVariants({ variant: 'outline' }))}
+                  className={cn(
+                    'max-sm:hidden',
+                    buttonVariants({ variant: 'outline' })
+                  )}
                 >
                   Connect with me
                 </Link>
