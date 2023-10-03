@@ -103,14 +103,12 @@ export default function Home() {
             className="grid sm:grid-cols-2 gap-8 sm:gap-4 justify-center"
           >
             <section className="flex flex-col items-center space-y-4">
-              <h2 className="h2">❌ The problem</h2>
+              <h2 className="h2">❌ The problems</h2>
               <ul className="list-inside list-disc">
+                <li>You maintain a Next.js codebase that became too complex</li>
                 <li>
-                  You maintain a Next.js codebase that you lost control over
-                </li>
-                <li>
-                  You&apos;d like to upgrade to Next.js 13, but don&apos;t know
-                  how to do it best
+                  You&apos;d like to upgrade to Next.js 13, but want to save
+                  hours of trial and error
                 </li>
                 <li>
                   You have a team of juniors and want them to learn Next.js 13
@@ -119,19 +117,19 @@ export default function Home() {
               </ul>
             </section>
             <section className="flex flex-col items-center space-y-4">
-              <h2 className="h2">✅ Our solution</h2>
+              <h2 className="h2">✅ Our solutions</h2>
               <ul className="list-inside list-disc">
                 <li>
                   We refactor and fix your Next.js codebase with clean and
                   efficient code
                 </li>
                 <li>
-                  We upgrade you to Next.js 13, tailored to your project for
-                  maximum performance
+                  We upgrade you to Next.js 13, tailored to your project for max
+                  performance
                 </li>
                 <li>
                   We school your workers in Next.js 13, tailored to your project
-                  for maximum turnover
+                  for max turnover
                 </li>
               </ul>
             </section>
@@ -140,17 +138,14 @@ export default function Home() {
             In other words
           </i>
           <p className="text-center text-lg font-bold mt-1 mb-4">
-            You have a{' '}
-            <span className="underline decoration-wavy decoration-destructive">
-              problem
-            </span>{' '}
-            with your Next.js codebase and{' '}
-            <span className="underline decoration-double decoration-success">
-              we solve it
-            </span>{' '}
-            for you!
+            You need someone to steer your Next.js ship into the right direction
           </p>
-          {GetStartedButton}
+          <Link
+            href="#pricing"
+            className={cn('block mx-auto', buttonVariants())}
+          >
+            Let&apos;s get started 🤝
+          </Link>
         </div>
         <section className="text-center space-y-4 pb-16 container">
           <div className="space-y-1">
@@ -171,8 +166,7 @@ export default function Home() {
               <p className="text-muted-foreground">
                 I&apos;m Next.js Developer by heart and I stand behind my
                 product. If I do not live up to the standards and scope we
-                discussed beforehand, I will refund your money - no questions
-                asked.
+                discussed beforehand, I will refund your money!
               </p>
               <div className="flex items-center gap-2 pt-2">
                 <Link
@@ -272,8 +266,12 @@ export default function Home() {
               heading="🔧 Refactor your code"
               description="We refactor and clean your Next.js codebase"
               benefits={[
-                'For up to 50k LOC codebase',
-                'Up to 1.5k new LOC',
+                <>
+                  For up to 50k LOC codebase<sup>1</sup>
+                </>,
+                <>
+                  Up to 1.5k new LOC<sup>2</sup>
+                </>,
                 '2h schooling of your team included',
               ]}
               price={2500}
@@ -285,8 +283,12 @@ export default function Home() {
               heading="✨ Upgrade to Next.js 13"
               description="We upgrade you to Next.js 13 App Router"
               benefits={[
-                'For up to 50k LOC codebase',
-                'Up to 3k new LOC',
+                <>
+                  For up to 50k LOC codebase<sup>1</sup>
+                </>,
+                <>
+                  Up to 3k new LOC<sup>2</sup>
+                </>,
                 '3h schooling of your team included',
               ]}
               price={5000}
@@ -313,6 +315,18 @@ export default function Home() {
             </span>{' '}
             and first-class support
           </i>
+          <small className="text-muted-foreground block mt-2">
+            <ol>
+              <li>
+                <sup>1</sup> We only count application code, so no node_modules
+                or config files. For &gt;50k codebases just contact us
+              </li>
+              <li>
+                <sup>2</sup> Alongside with plenty of removed lines for dead or
+                replaced (old) code
+              </li>
+            </ol>
+          </small>
         </section>
       </div>
       <FAQ />

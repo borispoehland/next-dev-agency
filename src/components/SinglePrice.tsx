@@ -1,9 +1,9 @@
-import { PropsWithChildren } from 'react'
+import { PropsWithChildren, ReactNode } from 'react'
 
 interface IProps extends PropsWithChildren {
   heading: string
   description: string
-  benefits: string[]
+  benefits: ReactNode[]
   price?: number
   discountedPrice?: number
 }
