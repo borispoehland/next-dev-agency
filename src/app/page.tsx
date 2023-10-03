@@ -63,7 +63,7 @@ export default function Home() {
         </nav>
       </div>
       <div className="py-28">
-        <main className="gap-2 flex items-center flex-col text-center container">
+        <main className="gap-2 flex items-center flex-col text-center container overflow-hidden">
           <Link
             href="#about"
             className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"

@@ -154,7 +154,7 @@ const FAQ = () => {
             </Link>{' '}
             or by{' '}
             <Link
-              href="mailto:me@boris.app"
+              href="mailto:boris@nextdev.agency"
               className="underline"
               target="_blank"
             >
