@@ -65,13 +65,14 @@ export default function Home() {
       <div className="py-28">
         <main className="gap-2 flex items-center flex-col text-center container overflow-hidden">
           <Link
-            href="#about"
+            href="#pricing"
             className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
           >
             🎉 <Separator className="mx-2 h-4" orientation="vertical" />{' '}
             <span>
-              Introducing{' '}
-              <span className="max-sm:hidden">Next Dev Agency, </span>
+              <span className="max-sm:hidden">
+                Introducing Next Dev Agency,{' '}
+              </span>
               Drop-in Next.js services
             </span>
             <ArrowRightIcon className="ml-1 h-4 w-4" />
