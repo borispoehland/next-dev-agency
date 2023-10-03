@@ -45,7 +45,7 @@ const ButtonCheckout = ({
         e.preventDefault()
         handlePayment()
       }}
-      className={cn(buttonVariants())}
+      className={cn('mt-4', buttonVariants())}
     >
       {isLoading ? (
         <svg

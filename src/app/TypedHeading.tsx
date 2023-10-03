@@ -22,7 +22,7 @@ export default function TypedHeading() {
         return prev + 1
       })
     }
-    handle = setInterval(fn, 4000)
+    handle = setInterval(fn, 6000)
 
     return () => {
       clearInterval(handle)

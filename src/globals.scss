@@ -124,14 +124,35 @@
     height: 100%;
     width: 100%;
     @apply bg-background;
-    @apply border-r-0 border-y-0 border-[2px] border-[#f8d340];
-    animation: animate 4s steps(12) infinite;
+    animation: animate 6s steps(12) infinite;
 }
-@keyframes animate{
-    40%, 60%{
-        left: calc(100% + 4px);
+
+.text.sec-text:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  @apply border-r-0 border-y-0 border-[2px];
+  @apply bg-background;
+  animation: animate 6s steps(12) infinite, blink .75s step-end infinite;
+}
+
+@keyframes animate {
+    20%, 70% {
+        left: calc(100% + 1px);
     }
-    100%{
+    100% {
         left: 0%;
     }
+}
+
+@keyframes blink {
+  from, to { 
+    @apply border-transparent
+   }
+  50% { 
+    @apply border-[#f8d340];
+   }
 }
