@@ -1,5 +1,6 @@
 'use client'
 
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 import type { JSX } from 'react'
@@ -17,9 +18,9 @@ const faqList: FAQItemProps[] = [
     question: 'Why should I book Next Dev Agency?',
     answer: (
       <p>
-        With 5 years professional Next.js experience, we encountered and solved
-        several Next.js pitfalls that make your code not only cleaner, but also
-        faster and more reliable.
+        With 5 years professional Next.js experience, we have encountered and
+        solved several Next.js pitfalls that not only make your code cleaner but
+        also faster and more reliable.
       </p>
     ),
   },
@@ -74,14 +75,23 @@ const faqList: FAQItemProps[] = [
   },
 ]
 
-const FaqItem = ({ item }: { item: FAQItemProps }) => {
+const FaqItem = ({
+  item,
+  isFirst,
+}: {
+  item: FAQItemProps
+  isFirst: boolean
+}) => {
   const accordion = useRef<HTMLDivElement>(null)
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <li>
       <button
-        className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+        className={cn(
+          'relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left md:text-lg border-base-content/10',
+          !isFirst && 'border-t'
+        )}
         onClick={(e) => {
           e.preventDefault()
           setIsOpen(!isOpen)
@@ -166,7 +176,7 @@ const FAQ = () => {
 
         <ul className="basis-1/2">
           {faqList.map((item, i) => (
-            <FaqItem key={i} item={item} />
+            <FaqItem key={i} item={item} isFirst={i === 0} />
           ))}
         </ul>
       </div>

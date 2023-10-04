@@ -236,7 +236,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <SinglePrice
-              heading="🐛 Fix a bug"
+              heading="🛠️&nbsp; Fix a bug"
               description="We fix the nasty bug you always wanted fixed"
               benefits={[
                 'Bug fixed or money back',
@@ -252,7 +252,7 @@ export default function Home() {
               />
             </SinglePrice>
             <SinglePrice
-              heading="🔧 Refactor your code"
+              heading="🧹&nbsp; Refactor your code"
               description="We refactor and clean your Next.js codebase"
               benefits={[
                 <>
@@ -269,7 +269,7 @@ export default function Home() {
               {BookButton}
             </SinglePrice>
             <SinglePrice
-              heading="✨ Upgrade to Next.js 13"
+              heading="✨&nbsp; Upgrade to Next.js 13"
               description="We upgrade you to Next.js 13 App Router"
               benefits={[
                 <>
