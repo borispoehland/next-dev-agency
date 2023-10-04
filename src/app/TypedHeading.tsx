@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-const words = ['Cleaning', 'Fixing', 'Upgrading', 'Maintaining']
+const words = ['Cleaning', 'Fixing', 'Upgrading']
 
 export default function TypedHeading() {
   const [index, setIndex] = useState(0)
