@@ -136,14 +136,14 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-base-200" id="faq">
+    <section id="faq">
       <div className="py-24 container max-w-7xl flex flex-col md:flex-row gap-4 md:gap-8">
         <div id="faqs" className="flex flex-col space-y-1 text-left basis-1/2">
           <i className="block text-muted-foreground">
             In case things are still unclear
           </i>
           <h2 className="h2">Frequently asked questions</h2>
-          <p>
+          {/* <p>
             Have another question? Contact us on{' '}
             <Link
               href="https://twitter.com/nextdevagency"
@@ -161,7 +161,7 @@ const FAQ = () => {
               email
             </Link>
             .
-          </p>
+          </p> */}
         </div>
 
         <ul className="basis-1/2">

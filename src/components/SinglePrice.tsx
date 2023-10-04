@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import { PropsWithChildren, ReactNode } from 'react'
 
 interface IProps extends PropsWithChildren {
@@ -6,6 +7,7 @@ interface IProps extends PropsWithChildren {
   benefits: ReactNode[]
   price?: number
   discountedPrice?: number
+  className?: string
 }
 
 export default function SinglePrice({
@@ -15,9 +17,15 @@ export default function SinglePrice({
   price,
   discountedPrice,
   children,
+  className,
 }: IProps) {
   return (
-    <article className="bg-background px-4 py-6 rounded-lg border text-start flex flex-col gap-1 shadow">
+    <article
+      className={cn(
+        'bg-background px-4 py-6 rounded-lg border text-start flex flex-col gap-1 shadow',
+        className
+      )}
+    >
       <h3 className="h3">{heading}</h3>
       <p className="text-muted-foreground">{description}</p>
       <div className="flex gap-2 py-4">

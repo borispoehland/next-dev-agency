@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 import { ArrowRightIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaXTwitter } from 'react-icons/fa6'
 import TypedHeading from './TypedHeading'
 
 const calendlyLink = 'https://calendly.com/nextdevagency/free-consulation-call'
@@ -97,10 +98,10 @@ export default function Home() {
         </main>
       </div>
       <div className="bg-gradient-to-b from-muted to-background border-t">
-        <div className="pt-16 pb-24 flex flex-col items-center container">
+        <div className="pt-24 pb-32 flex flex-col items-center container">
           <div
             id="about"
-            className="grid sm:grid-cols-2 gap-8 sm:gap-4 justify-center"
+            className="grid sm:grid-cols-2 gap-12 sm:gap-8 justify-center"
           >
             <section className="flex flex-col items-center space-y-4">
               <h2 className="h2">❌ The problems</h2>
@@ -134,7 +135,7 @@ export default function Home() {
               </ul>
             </section>
           </div>
-          <i className="block text-center mt-4 text-muted-foreground">
+          <i className="block text-center mt-12 text-muted-foreground">
             In other words
           </i>
           <p className="text-center text-lg font-bold mt-1 mb-4">
@@ -147,53 +148,41 @@ export default function Home() {
             Let&apos;s get started 🤝
           </Link>
         </div>
-        <section className="text-center space-y-4 pb-16 container">
+        <section className="text-center space-y-4 pb-24 container">
           <div className="space-y-1">
-            <i className="block text-center text-muted-foreground">
-              We take the risk so you have peace of mind
-            </i>
-            <h2 className="h2">Satisfied or money back! 💸</h2>
+            <h2 className="h2">
+              Satisfied or{' '}
+              <span role="presentation" aria-label="Money">
+                💸
+              </span>{' '}
+              back!
+            </h2>
+            <p className="text-muted-foreground text-lg !mb-3">
+              If it works, it was money well spent.{' '}
+              <span className="inline-block">If not, money back!</span>
+            </p>
           </div>
           <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row gap-4 sm:gap-8 shadow items-center p-4 bg-gradient-to-br from-background to-muted rounded-lg border">
             <Image
               src="https://montescout.com/public/about/me.png"
-              width={200}
-              height={200}
+              width={120}
+              height={120}
               alt="Picture of Boris Pöhland"
             />
             <div className="space-y-2 text-start">
               <h3 className="h3">Hi, I&apos;m Boris</h3>
               <p className="text-muted-foreground">
                 I&apos;m Next.js Developer by heart and I stand behind my
-                product. If I do not live up to the standards and scope we
-                discussed beforehand, I will refund your money!
+                product. If I do not live up to the standards and scope we set,
+                I will refund your money!
               </p>
-              <div className="flex items-center gap-2 pt-2">
-                <Link
-                  href="https://borispoehland.com"
-                  target="_blank"
-                  className={cn(buttonVariants())}
-                >
-                  More about me
-                </Link>
-                <Link
-                  href="https://twitter.com/borispoehland"
-                  target="_blank"
-                  className={cn(
-                    'max-sm:hidden',
-                    buttonVariants({ variant: 'outline' })
-                  )}
-                >
-                  Connect with me
-                </Link>
-              </div>
             </div>
           </div>
         </section>
       </div>
       <div className="bg-gradient-to-b from-background to-muted relative border-y">
         <Image src="/grid-pattern-3.png" fill alt="" className="object-cover" />
-        <section className="container py-16 text-center space-y-4 z-10 relative">
+        <section className="container py-24 text-center space-y-6 z-10 relative">
           <div id="process" className="space-y-1">
             <i className="block text-center text-muted-foreground">
               How does it work?
@@ -203,14 +192,14 @@ export default function Home() {
             </h2>
           </div>
           <div className="[&>h3]:step [&>p]:mb-4 steps mb-12 ml-4 border-l pl-8 [counter-reset:step] text-start">
-            <h3 className="h3">Free consultation call</h3>
+            <h3 className="h3">Free Discovery call</h3>
             <p>
               We get to know each other in a 15-30 minute meeting and discuss
               your requirements.
             </p>
             <h3 className="h3">We send you an offer</h3>
             <p>
-              From the input of the consultation call, we will send you a
+              From the input of the discovery call, we will send you a
               personalised offer to elevate your Next.js codebase.
             </p>
             <h3 className="h3">We do our magic</h3>
@@ -234,18 +223,18 @@ export default function Home() {
         </section>
       </div>
       <div className="bg-muted border-b">
-        <section className="space-y-4 text-center py-16 container">
+        <section className="space-y-6 text-center py-24 container">
           <div id="pricing" className="space-y-1">
-            <i className="block text-center text-muted-foreground">
+            {/*  <i className="block text-center text-muted-foreground">
               High end services for low tier pricing
-            </i>
-            <h2 className="h2">Flexible Pricing tailored to your use case</h2>
-            <p className="!mt-4 text-xl font-medium">
+            </i> */}
+            <h2 className="h2">Pricing</h2>
+            {/* <p className="!mb-6 text-xl font-medium">
               🎉 <span className="text-success">10% off</span> for the first 10
               customers
-            </p>
+            </p> */}
           </div>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <SinglePrice
               heading="🐛 Fix a bug"
               description="We fix the nasty bug you always wanted fixed"
@@ -304,6 +293,7 @@ export default function Home() {
                 'One time or with maintenance',
                 'Team schoolings possible',
               ]}
+              className="hidden sm:flex xl:hidden"
             >
               {BookButton}
             </SinglePrice>
@@ -319,7 +309,10 @@ export default function Home() {
             <ol>
               <li>
                 <sup>1</sup> We only count application code, so no node_modules
-                or config files. For &gt;50k codebases just contact us
+                or config files. For &gt;50k codebases{' '}
+                <Link href={calendlyLink} target="_blank" className="underline">
+                  contact us
+                </Link>
               </li>
               <li>
                 <sup>2</sup> Alongside with plenty of removed lines for dead or
@@ -330,7 +323,7 @@ export default function Home() {
         </section>
       </div>
       <FAQ />
-      <section className="text-center space-y-1 pb-16 container">
+      <section className="text-center space-y-1 pb-24 container">
         <h2 className="h2">
           Ready to take your Next.js codebase to the next level?
         </h2>
@@ -345,6 +338,9 @@ export default function Home() {
             <div className="flex gap-3 items-center">
               <Image src={Logo} width={30} alt="Next Dev Agency Logo" />
               <p className="text-lg font-bold mt-0.5">Next Dev Agency</p>
+              <Link href="https://twitter.com/nextdevagency" target="_blank">
+                <FaXTwitter />
+              </Link>
             </div>
             <div className="space-y-1">
               <p className="text-sm">
