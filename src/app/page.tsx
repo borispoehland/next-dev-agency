@@ -339,9 +339,9 @@ export default function Home() {
               <Image src={Logo} width={30} alt="Next Dev Agency Logo" />
               <p className="text-lg font-bold mt-0.5">Next Dev Agency</p>
               <Link
-                href="https://twitter.com/nextdevagency"
+                href="https://twitter.com/borispoehland"
                 target="_blank"
-                aria-label="Visit Next Dev Agency on Twitter"
+                aria-label="Visit Boris Pöhland on Twitter"
               >
                 <FaXTwitter />
               </Link>
