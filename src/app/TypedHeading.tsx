@@ -8,7 +8,7 @@ export default function TypedHeading() {
   const [index, setIndex] = useState(0)
   const ref = useRef<HTMLSpanElement>(null)
 
-  /* useEffect(() => {
+  useEffect(() => {
     if (!ref.current) {
       return
     }
@@ -27,7 +27,7 @@ export default function TypedHeading() {
     return () => {
       clearInterval(handle)
     }
-  }, []) */
+  }, [])
 
   return (
     <span ref={ref} className="text">
