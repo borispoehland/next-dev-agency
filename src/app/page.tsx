@@ -148,7 +148,7 @@ export default function Home() {
             Let&apos;s get started 🤝
           </Link>
         </div>
-        <section className="text-center space-y-4 pb-24 container">
+        {/* <section className="text-center space-y-4 pb-24 container">
           <div className="space-y-1">
             <h2 className="h2">
               Satisfied or{' '}
@@ -178,7 +178,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <div className="bg-gradient-to-b from-background to-muted relative border-y">
         <Image src="/grid-pattern-3.png" fill alt="" className="object-cover" />
