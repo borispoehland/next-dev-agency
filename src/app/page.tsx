@@ -352,7 +352,8 @@ export default function Home() {
                 schooling your workers remotely and upgrading to Next.js 13
               </p>
               <p className="text-sm text-muted-foreground">
-                Copyright © {new Date().getFullYear()} - All rights reserved
+                Copyright © {new Date().getFullYear()} WEB3DEV DOO - All rights
+                reserved
               </p>
             </div>
           </div>
