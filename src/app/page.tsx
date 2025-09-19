@@ -338,13 +338,13 @@ export default function Home() {
             <div className="flex gap-3 items-center">
               <Image src={Logo} width={30} alt="Next Dev Agency Logo" />
               <p className="text-lg font-bold mt-0.5">Next Dev Agency</p>
-              <Link
+              {/* <Link
                 href="https://twitter.com/borispoehland"
                 target="_blank"
                 aria-label="Visit Boris Pöhland on Twitter"
               >
                 <FaXTwitter />
-              </Link>
+              </Link> */}
             </div>
             <div className="space-y-1">
               <p className="text-sm">
